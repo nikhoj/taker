@@ -40,7 +40,7 @@ dtype = "fp16" # "fp32", "bf16", "hqq8", "int8", "hqq4", "nf4", "int4"
 model = Model("facebook/opt-125m", dtype=dtype)
 
 # Access model attributes
-print(f"Number of layers: {model.cfg.n_layer}")
+print(f"Number of layers: {model.cfg.n_layers}")
 print(f"Model width: {model.cfg.d_model}")
 print(f"MLP width: {model.cfg.d_mlp}")
 print(f"Number of heads: {model.cfg.n_heads}")
